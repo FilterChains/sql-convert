@@ -14,7 +14,6 @@ import java.util.Objects;
  * @author : Wei.Lu
  * @version : 1.0
  * @date : 2021/4/24 17:09
- * @description : org.su.common
  */
 @Slf4j
 public class BaseData {

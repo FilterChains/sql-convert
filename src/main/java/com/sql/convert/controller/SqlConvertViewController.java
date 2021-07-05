@@ -63,7 +63,7 @@ public class SqlConvertViewController implements Initializable {
     private Label content;
 
     /**
-     * <p>@description : 登出 </p>
+     * <p>@description : 退出 </p>
      * <p>@author : Wei.Lu</p>
      * <p>@date : 2021/5/23 17:10 </p>
      **/

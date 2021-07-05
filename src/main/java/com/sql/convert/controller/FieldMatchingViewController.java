@@ -104,6 +104,7 @@ public class FieldMatchingViewController implements Initializable {
      * @param actionEvent 当前画板事件
      **/
     public void logOut(ActionEvent actionEvent) {
+        BaseData.closeConnection();
         JavaFxViewUtil.windowToSkip(Boolean.TRUE, "/view/FieldMatchingLoginView.fxml", "convert", actionEvent);
     }
 

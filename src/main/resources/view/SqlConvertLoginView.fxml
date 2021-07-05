@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="anchorPane" prefHeight="204.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sql.convert.controller.SqlConvertLoginViewController">
+    <Label layoutX="111.0" layoutY="14.0" text="欢迎使用SQL转换工具">
+        <font>
+            <Font name="Gadugi" size="24.0"/>
+        </font>
+    </Label>
+    <Label layoutX="15.0" layoutY="57.0" prefHeight="23.0" prefWidth="48.0" text="数据库:"/>
+    <ChoiceBox fx:id="cBox" layoutX="67.0" layoutY="57.0" prefHeight="23.0" prefWidth="161.0"/>
+    <TextField fx:id="url" layoutX="281.0" layoutY="57.0"/>
+    <TextField fx:id="port" layoutX="281.0" layoutY="101.0" prefHeight="23.0" prefWidth="64.0"/>
+    <TextField fx:id="dbName" layoutX="68.0" layoutY="101.0"/>
+    <TextField fx:id="userName" layoutX="68.0" layoutY="148.0"/>
+    <PasswordField fx:id="password" layoutX="281.0" layoutY="148.0"/>
+    <Label layoutX="240.0" layoutY="61.0" text="URL:"/>
+    <Label layoutX="15.0" layoutY="105.0" text="库名称："/>
+    <Label layoutX="15.0" layoutY="152.0" text="用户名："/>
+    <Label layoutX="238.0" layoutY="105.0" text="端口:"/>
+    <Label layoutX="238.0" layoutY="152.0" text="密码："/>
+    <Button fx:id="connection" layoutX="148.0" layoutY="178.0" mnemonicParsing="false" onAction="#connection"
+            prefHeight="23.0" prefWidth="64.0" text="连接"/>
+    <Label layoutX="323.0" layoutY="182.0" prefHeight="15.0" prefWidth="147.0" text="version 1.0.0.0   God wei"/>
+    <Button fx:id="logOut" onAction="#logOut" layoutX="246.0" layoutY="178.0" mnemonicParsing="false" prefHeight="23.0"
+            prefWidth="64.0" text="退出"/>
+</AnchorPane>

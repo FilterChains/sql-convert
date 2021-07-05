@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="anchorPane" prefHeight="469.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sql.convert.controller.FieldMatchingLoginViewController">
+    <Label alignment="TOP_CENTER" layoutX="67.0" layoutY="21.0" prefHeight="35.0" prefWidth="326.0"
+           text="欢迎使用两库表字段匹配工具">
+        <font>
+            <Font name="Gadugi" size="24.0"/>
+        </font>
+    </Label>
+    <Label layoutX="19.0" layoutY="110.0" prefHeight="23.0" prefWidth="48.0" text="数据库:"/>
+    <ChoiceBox fx:id="cBox_m" layoutX="71.0" layoutY="110.0" prefHeight="23.0" prefWidth="161.0"/>
+    <TextField fx:id="url_m" layoutX="285.0" layoutY="110.0"/>
+    <TextField fx:id="port_m" layoutX="285.0" layoutY="154.0" prefHeight="23.0" prefWidth="64.0"/>
+    <TextField fx:id="dbName_m" layoutX="72.0" layoutY="154.0"/>
+    <TextField fx:id="userName_m" layoutX="72.0" layoutY="201.0"/>
+    <PasswordField fx:id="password_m" layoutX="285.0" layoutY="201.0"/>
+    <Label layoutX="244.0" layoutY="114.0" text="URL:"/>
+    <Label layoutX="19.0" layoutY="158.0" text="库名称："/>
+    <Label layoutX="19.0" layoutY="205.0" text="用户名："/>
+    <Label layoutX="242.0" layoutY="158.0" text="端口:"/>
+    <Label layoutX="242.0" layoutY="205.0" text="密码："/>
+    <Label layoutX="19.0" layoutY="288.0" prefHeight="23.0" prefWidth="48.0" text="数据库:"/>
+    <ChoiceBox fx:id="cBox_s" layoutX="71.0" layoutY="288.0" prefHeight="23.0" prefWidth="161.0"/>
+    <TextField fx:id="url_s" layoutX="285.0" layoutY="288.0"/>
+    <TextField fx:id="port_s" layoutX="285.0" layoutY="332.0" prefHeight="23.0" prefWidth="64.0"/>
+    <TextField fx:id="dbName_s" layoutX="72.0" layoutY="332.0"/>
+    <TextField fx:id="userName_s" layoutX="72.0" layoutY="379.0"/>
+    <PasswordField fx:id="password_s" layoutX="285.0" layoutY="379.0"/>
+    <Label layoutX="244.0" layoutY="292.0" text="URL:"/>
+    <Label layoutX="19.0" layoutY="336.0" text="库名称："/>
+    <Label layoutX="19.0" layoutY="383.0" text="用户名："/>
+    <Label layoutX="242.0" layoutY="336.0" text="端口:"/>
+    <Label layoutX="242.0" layoutY="383.0" text="密码："/>
+    <Label layoutX="317.0" layoutY="454.0" text="version 1.0.0.0   God wei"/>
+    <Label layoutX="189.0" layoutY="83.0" text="Database-One "/>
+    <Label layoutX="188.0" layoutY="257.0" text="Database-Two"/>
+    <Button fx:id="connection" layoutX="212.0" layoutY="422.0" mnemonicParsing="false" onAction="#connection"
+            prefHeight="23.0" prefWidth="88.0" text="两库资源加载"/>
+    <Button fx:id="logOut" layoutX="382.0" layoutY="422.0" mnemonicParsing="false" onAction="#logOut" prefHeight="23.0"
+            prefWidth="64.0" text="退出"/>
+    <Label layoutX="285.0" layoutY="83.0" text="注：(匹配对象)" textFill="#e50f0f"/>
+</AnchorPane>

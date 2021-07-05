@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="anchorPane" prefHeight="179.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sql.convert.controller.HomePageViewController">
+    <Label alignment="TOP_CENTER" layoutX="110.0" layoutY="14.0" prefHeight="35.0" prefWidth="298.0" text="欢迎使用数据库相关工具">
+        <font>
+            <Font name="Gadugi" size="24.0"/>
+        </font>
+    </Label>
+    <Button fx:id="fieldMatching" onAction="#fieldMatching" layoutX="61.0" layoutY="117.0" mnemonicParsing="false"
+            prefHeight="23.0"
+            prefWidth="147.0"
+            text="两库表字段匹配工具"/>
+    <Button fx:id="sqlConvert" onAction="#sqlConvert" layoutX="61.0" layoutY="69.0" mnemonicParsing="false"
+            prefHeight="23.0" prefWidth="147.0"
+            text="SQL转换相关工具"/>
+    <Button fx:id="databaseCount" onAction="#databaseCount" layoutX="301.0" layoutY="117.0" mnemonicParsing="false"
+            prefHeight="23.0"
+            prefWidth="147.0"
+            text="库表数据条数查询工具"/>
+    <Button fx:id="databaseExcel" onAction="#databaseExcel" layoutX="301.0" layoutY="69.0" mnemonicParsing="false"
+            prefHeight="23.0"
+            prefWidth="147.0"
+            text="数据库DDL导出工具"/>
+    <Label layoutX="374.0" layoutY="165.0" prefHeight="15.0" prefWidth="147.0" text="version 1.0.0.0   God wei"/>
+</AnchorPane>

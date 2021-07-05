@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="anchorPane" prefHeight="680.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sql.convert.controller.FieldMatchingViewController">
+    <Label alignment="TOP_CENTER" layoutX="324.0" layoutY="26.0" prefHeight="35.0" prefWidth="326.0"
+           text="欢迎使用两库表字段匹配工具">
+        <font>
+            <Font name="Gadugi" size="24.0"/>
+        </font>
+    </Label>
+    <Label layoutX="828.0" layoutY="658.0" text="version 1.0.0.0   God wei"/>
+    <Label fx:id="databaseOne" layoutX="14.0" layoutY="99.0" text="Database-One "/>
+    <Label fx:id="databaseTwo" layoutX="256.0" layoutY="99.0" text="Database-Two"/>
+    <Button fx:id="logOut" layoutX="905.0" layoutY="622.0" mnemonicParsing="false" onAction="#logOut" prefHeight="23.0"
+            prefWidth="64.0" text="退出"/>
+    <PieChart fx:id="pieChart" layoutX="14.0" layoutY="127.0" prefHeight="480.0" prefWidth="520.0"/>
+    <TableView fx:id="matchList" layoutX="543.0" layoutY="129.0" prefHeight="480.0" prefWidth="426.0">
+        <columns>
+            <TableColumn fx:id="dbOne" prefWidth="148" text="Database-One-Name"/>
+            <TableColumn fx:id="dbTwo" prefWidth="148" text="Database-Two-Name"/>
+            <TableColumn fx:id="dbMatch" prefWidth="127" text="匹配度"/>
+        </columns>
+    </TableView>
+    <Button fx:id="search" onAction="#search" layoutX="751.0" layoutY="91.0" mnemonicParsing="false" prefHeight="35.0"
+            prefWidth="55.0" text="搜索"/>
+    <TextField fx:id="searchText" layoutX="542.0" layoutY="91.0" prefHeight="35.0" prefWidth="216.0"/>
+    <Button fx:id="export" onAction="#export" layoutX="817.0" layoutY="91.0" mnemonicParsing="false" prefHeight="35.0"
+            prefWidth="148.0"
+            text="导出未完全匹配的数据"/>
+</AnchorPane>

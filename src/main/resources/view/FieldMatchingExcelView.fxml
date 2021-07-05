@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="anchorPane" prefHeight="50.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sql.convert.controller.FieldMatchingExcelViewController">
+    <Label layoutX="222.0" layoutY="35.0" text="version 1.0.0.0   God wei"/>
+    <Button fx:id="export" onAction="#export" layoutY="3.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0"
+            text="导出路径"/>
+    <TextField fx:id="filePath" layoutX="58.0" layoutY="3.0" prefHeight="31.0" prefWidth="240.0"/>
+    <Button fx:id="excel" onAction="#excel" layoutX="298.0" layoutY="3.0" mnemonicParsing="false" prefHeight="31.0"
+            prefWidth="64.0" text="确认"/>
+</AnchorPane>

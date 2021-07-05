@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="anchorPane" prefHeight="677.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sql.convert.controller.SqlConvertViewController">
+    <TextArea fx:id="resource" layoutX="17.0" layoutY="47.0" prefHeight="577.0" prefWidth="478.0"/>
+    <TextArea fx:id="target" layoutX="565.0" layoutY="47.0" prefHeight="577.0" prefWidth="448.0"/>
+    <Button fx:id="convert" layoutX="502.0" layoutY="303.0" mnemonicParsing="false" onAction="#convert"
+            text="转换&gt;&gt;"/>
+    <Label layoutX="207.0" layoutY="23.0" text="Resource"/>
+    <Label layoutX="789.0" layoutY="23.0" text="Target"/>
+    <Button fx:id="create" layoutX="502.0" layoutY="360.0" mnemonicParsing="false" onAction="#create" prefHeight="23.0"
+            prefWidth="58.0" text="创建"/>
+    <Button fx:id="exit" layoutX="959.0" layoutY="11.0" mnemonicParsing="false" onAction="#exit" prefHeight="23.0"
+            prefWidth="53.0" text="退出"/>
+    <ChoiceBox fx:id="cBox" layoutX="495.0" layoutY="19.0" prefHeight="23.0" prefWidth="104.0"/>
+    <Label fx:id="dbType" layoutX="424.0" layoutY="23.0" text="数据库类型:"/>
+    <Label fx:id="content" layoutX="565.0" layoutY="632.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0"
+           prefWidth="448.0" textAlignment="RIGHT"/>
+</AnchorPane>
